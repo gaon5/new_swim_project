@@ -1,9 +1,10 @@
+
 from flask import Flask, url_for, request, redirect, render_template, session
 from datetime import date, datetime, timedelta
 import mysql.connector
 from app import config
 import math
-import bcrypt
+# import bcrypt
 import re
 
 app = Flask(__name__)
@@ -22,6 +23,7 @@ def get_cursor():
                                          password=config.dbpass,
                                          host=config.dbhost,
                                          database=config.dbname,
+                                         ssl_ca=config.SSL_CA_PATH,  
                                          autocommit=True)
     db_conn = connection.cursor()
     return db_conn

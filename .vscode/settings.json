@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/de7626b2-d5a8-451d-8cbd-aaf92c413e90/resourceGroups/new-swim-app_group/providers/Microsoft.Web/sites/new-swim-app",
+    "appService.deploySubpath": "."
+}
