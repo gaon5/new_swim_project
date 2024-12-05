@@ -1,4 +1,4 @@
-from app import app
+
 from flask import url_for, request, redirect, render_template, session
 from datetime import date, datetime, timedelta
 import math
